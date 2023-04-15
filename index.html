@@ -12,6 +12,10 @@
             max-width: 800px;
             min-width: 480px;
             margin: 0 auto;
+            background: url("https://images.pexels.com/photos/998679/pexels-photo-998679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 1.5rem;
         }
 
         .UserInputFeild {
@@ -33,6 +37,8 @@
             background-color: #FFFFFF;
             border: 0;
             border-radius: .5rem;
+
+
             box-sizing: border-box;
             color: #111827;
             font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -48,6 +54,11 @@
             user-select: none;
             -webkit-user-select: none;
             touch-action: manipulation;
+        }
+
+        input[type=button]:nth-child(2) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
 
         input[type=button]:hover {
@@ -74,6 +85,8 @@
         .animated {
             animation: bounce .4s ease infinite alternate;
             text-transform: uppercase;
+            color: white;
+
         }
 
         @keyframes bounce {
@@ -103,7 +116,7 @@
         <input type="number" id="number" placeholder="Guess number">
         <input type="button" id="btn1" value="Submit">
     </div>
-    <p id="prevalue">Previous Guess:</p>
+    <p id="prevalue" style="color:white;">Previous Guess:</p>
 
     <h3>Output: <span class="result"></span></h3>
 
