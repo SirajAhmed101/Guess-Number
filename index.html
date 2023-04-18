@@ -14,12 +14,10 @@
             min-width: 480px;
             margin: 5rem auto;
             padding: 2rem 5rem;
-            /* background-size: cover; */
-            /* background-position: center; */
+            background: url("https://c4.wallpaperflare.com/wallpaper/421/815/710/the-verge-triangles-hd-logo-guessing-game-wallpaper-preview.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
             font-size: 1.5rem;
-            /* background: linear-gradient(rgba(8, 7, 7, 0.2), rgba(19, 18, 18, 0.5), rgba(88, 88, 88, 0.2)); */
-            /* backdrop-filter: blur(10px) */
-            background: rgba(209, 192, 192, 0.2);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
@@ -96,15 +94,14 @@
         .animated {
             animation: bounce .8s ease infinite alternate;
             text-transform: uppercase;
-            color: rgba(243, 0, 0, 0.5);
+            color: #fff;
 
+            font-weight: bolder;
         }
 
         @keyframes bounce {
             0% {
-                text-shadow:
-                    0 5px 0 #ccc,
-                    0 2px 3px rgba(0, 0, 0, 1);
+                text-shadow: 0 5px 0 #ccc,
             }
 
             100% {
@@ -127,7 +124,7 @@
         <input type="number" id="number" placeholder="Guess number">
         <input type="button" id="btn1" value="Submit">
     </div>
-    <p id="prevalue" style="color:rgb(228, 111, 82);">Previous Guess:</p>
+    <p id="prevalue" style="color:yellow">Previous Guess:</p>
 
     <h3>Output: <span class="result"></span></h3>
 
