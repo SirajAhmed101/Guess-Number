@@ -6,17 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guessing Game</title>
+
     <style>
         body {
             width: 50%;
             max-width: 800px;
             min-width: 480px;
-            margin: 0 auto;
-            background: url("https://images.pexels.com/photos/998679/pexels-photo-998679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat;
-            background-size: cover;
-            background-position: center;
+            margin: 5rem auto;
+            padding: 2rem 5rem;
+            /* background-size: cover; */
+            /* background-position: center; */
             font-size: 1.5rem;
+            /* background: linear-gradient(rgba(8, 7, 7, 0.2), rgba(19, 18, 18, 0.5), rgba(88, 88, 88, 0.2)); */
+            /* backdrop-filter: blur(10px) */
+            background: rgba(204, 14, 14, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
+
+
 
         .UserInputFeild {
             display: flex;
@@ -48,7 +59,7 @@
             padding: .75rem 1rem;
             text-align: center;
             text-decoration: none #D1D5DB solid;
-            text-decoration-thickness: auto;
+            /* text-decoration-thickness: auto; */
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
             cursor: pointer;
             user-select: none;
@@ -85,8 +96,7 @@
         .animated {
             animation: bounce .4s ease infinite alternate;
             text-transform: uppercase;
-            color: rgb(247, 243, 11);
-            margin-top: 5rem;
+            color: rgba(243, 0, 0, 0.5);
 
         }
 
@@ -117,7 +127,7 @@
         <input type="number" id="number" placeholder="Guess number">
         <input type="button" id="btn1" value="Submit">
     </div>
-    <p id="prevalue" style="color:white;">Previous Guess:</p>
+    <p id="prevalue" style="color:rgb(228, 111, 82);">Previous Guess:</p>
 
     <h3>Output: <span class="result"></span></h3>
 
