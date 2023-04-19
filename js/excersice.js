@@ -17,7 +17,7 @@ function guessNumber() {
   let guessNumValue = Number(guessNum.value);
 
   if (randomNum === guessNumValue) {
-    output.innerText = `Congratulations! You got it right!`;
+    output.innerText = `Congratulations! You got it right! in ${guessCount} Chance`;
     setGameOver();
   } else if (guessCount === 10) {
     output.innerText = `Your Chances has benn finished.`;
